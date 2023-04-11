@@ -31,11 +31,11 @@ public class TestBase {
 		cap.setCapability("deviceName", "sdk_gphone64_x86_64");
 		cap.setCapability("udid", "emulator-5554");
 		cap.setCapability("automationName", "uiautomator2");
-		cap.setCapability("appPackage", "io.selendroid.testapp");
-		cap.setCapability("appActivity", "io.selendroid.testapp.HomeScreenActivity");
+		cap.setCapability("appPackage", "io.appium.android.apis");
+		cap.setCapability("appActivity", "io.appium.android.apis.ApiDemos");
 		cap.setCapability("noReset", true);
 		
-		URL remoteUrl = new URL("http://localhost:4444/wd/hub");
+		URL remoteUrl = new URL("http://localhost:4723/wd/hub");
 		
 		try {
 			

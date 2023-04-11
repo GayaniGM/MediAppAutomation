@@ -27,8 +27,8 @@ public class CommonPage extends TestBase{
 	//Do not use  annotation FindBy. there is a delay in android than in web
 	//So to mitigate we have to use CacheLookup annotation before accessing the element
 	//Do not use Page factory model because of this. So  I am using Page Object model
-	By btn_EnButtin = By.xpath("//android.widget.Button[@text='EN Button']");
-	By btn_EnConfirmation = By.xpath("//android.widget.Button[@text='No, no']");
+	By btn_EnButtin = By.xpath("//android.widget.TextView[@text='Accessibility']");
+	By btn_EnConfirmation = By.xpath("//android.widget.TextView[@text='Accessibility Node Provider']");
 	
 	public void changeRegion(String idf_Name){
 		

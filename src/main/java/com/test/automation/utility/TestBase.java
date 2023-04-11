@@ -34,6 +34,7 @@ public class TestBase {
 		cap.setCapability("appPackage", "io.appium.android.apis");
 		cap.setCapability("appActivity", "io.appium.android.apis.ApiDemos");
 		cap.setCapability("noReset", true);
+		cap.setCapability("build", "Jenkins Automation build #123");
 		
 		URL remoteUrl = new URL("http://localhost:4723/wd/hub");
 		

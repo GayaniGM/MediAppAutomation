@@ -27,7 +27,7 @@ public class TestBase {
 		
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability("platformName", "android");
-		cap.setCapability("platformVersion", "13");
+		cap.setCapability("platformVersion", "12");
 		cap.setCapability("deviceName", "sdk_gphone64_x86_64");
 		cap.setCapability("udid", "emulator-5554");
 		cap.setCapability("automationName", "uiautomator2");

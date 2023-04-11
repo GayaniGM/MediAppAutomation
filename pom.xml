@@ -71,6 +71,12 @@
       <artifactId>maven-compat</artifactId>
       <version>3.6.3</version>
     </dependency>
+    <dependency>
+      <groupId>com.browserstack</groupId>
+      <artifactId>browserstack-local-java</artifactId>
+      <version>1.0.7</version>
+    </dependency>
+    
   </dependencies>
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->

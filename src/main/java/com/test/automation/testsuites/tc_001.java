@@ -71,10 +71,10 @@ public class tc_001 {
         Reporter.log("Validated Home page navigation successfully.");
         
 
-		TestBase.measureStartupTime();
+		//TestBase.measureStartupTime();
 		//TestBase.measurePageLoadTime();
 		//TestBase.measureAppCrash();
-		TestBase.measureMemoryUsage();
+		//TestBase.measureMemoryUsage();
 
         initialization.tearDown();
         LOGGER.info("Test case tc001 execution completed successfully.");

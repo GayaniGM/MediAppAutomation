@@ -6,6 +6,7 @@ package com.test.automation.pages;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.testng.asserts.Assertion;
 
 import com.test.automation.utility.TestBase;
 import io.appium.java_client.TouchAction;
@@ -29,11 +30,7 @@ public class CommonPage extends TestBase{
 	//Do not use Page factory model because of this. So  I am using Page Object model
 	By btn_EnButtin = By.xpath("//android.widget.TextView[@text='Accessibility']");
 	By btn_EnConfirmation = By.xpath("//android.widget.TextView[@text='Accessibility Node Provider']");
-	
-	public void changeRegion(String idf_Name){
-		
-		mobiledriver.findElement(By.xpath("//android.widget.Button[@text='"+idf_Name+"']"));
-	}
+	By lblAccessHeader =  By.xpath("//android.widget.TextView[@text='Accessibility/Accessibility Node Provider']");
 	
 	public void ClickENButton() {
 		
@@ -41,6 +38,13 @@ public class CommonPage extends TestBase{
 		mobiledriver.findElement(btn_EnConfirmation).click();
 	}
 
+	public void ValidateTest(String expecteValue) {
+		
+		Assertion assertion = new Assertion();
+		String header = mobiledriver.findElement(lblAccessHeader).getText();
+		assertion.assertEquals(header, expecteValue, "Title Doesn't match");
+		
+	}
 	
 	public void ScrollUp() {
 		

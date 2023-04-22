@@ -74,9 +74,7 @@
       <groupId>com.browserstack</groupId>
       <artifactId>browserstack-local-java</artifactId>
       <version>1.0.7</version>
-    </dependency>
-    
-    
+    </dependency> 
     <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 <dependency>
     <groupId>io.cucumber</groupId>
@@ -93,6 +91,16 @@
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-testng</artifactId>
     <version>4.2.0</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.0.0</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.0.0</version>
 </dependency>
 
 

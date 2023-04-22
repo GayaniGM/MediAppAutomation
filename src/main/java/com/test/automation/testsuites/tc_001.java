@@ -66,7 +66,7 @@ public class tc_001 {
         Row row = sheet.getRow(0);
         Cell cell = row.getCell(0);
         
-        common.ValidateTest(sheet.getRow(0).getCell(1).toString());
+        common.ValidateTest(sheet.getRow(0).getCell(0).toString());
         LOGGER.info("Validated Home page navigation successfully.");
         Reporter.log("Validated Home page navigation successfully.");
         

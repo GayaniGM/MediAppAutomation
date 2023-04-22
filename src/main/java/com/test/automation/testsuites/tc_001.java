@@ -27,9 +27,9 @@ import org.slf4j.LoggerFactory;
  * @author GayaniGunawardhana
  *
  */
-public class TC_001 {
+public class tc_001 {
 	
-	private static final Logger LOGGER = LoggerFactory.getLogger(TC_001.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(tc_001.class);
 	
 
 	

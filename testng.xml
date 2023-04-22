@@ -2,7 +2,7 @@
 <suite name="Test Suite">
   <test name="UITC_001">
     <classes>
-      <class name="com.test.automation.testsuites.TC_001"/>
+      <class name="com.test.automation.testsuites.tc_001"/>
     </classes>
   </test>
 </suite>

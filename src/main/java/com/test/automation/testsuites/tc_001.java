@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import com.test.automation.pages.CommonPage;
 import com.test.automation.utility.TestBase;
+import com.test.automation.utility.WriteintoExcel;
 
 import io.appium.java_client.android.AndroidDriver;
 
@@ -66,15 +67,17 @@ public class tc_001 {
         Row row = sheet.getRow(0);
         Cell cell = row.getCell(0);
         
-        common.ValidateTest(sheet.getRow(0).getCell(0).toString());
+        common.ValidateText(sheet.getRow(0).getCell(0).toString());
         LOGGER.info("Validated Home page navigation successfully.");
         Reporter.log("Validated Home page navigation successfully.");
         
 
 		//TestBase.measureStartupTime();
-		//TestBase.measurePageLoadTime();
+		TestBase.measurePageLoadTime();
 		//TestBase.measureAppCrash();
-		//TestBase.measureMemoryUsage();
+        double memory = TestBase.measureMemoryUsage();
+        WriteintoExcel.writeToExcel(memory);
+
 
         initialization.tearDown();
         LOGGER.info("Test case tc001 execution completed successfully.");

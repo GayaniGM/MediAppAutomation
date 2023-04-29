@@ -41,14 +41,14 @@ public class TestBase {
 		cap.setCapability("deviceName", "sdk_gphone64_x86_64");
 		cap.setCapability("udid", "emulator-5554");
 		cap.setCapability("automationName", "uiautomator2");
-		cap.setCapability("appPackage", "io.appium.android.apis");
-		cap.setCapability("appActivity", "io.appium.android.apis.ApiDemos");
-		//cap.setCapability("appPackage", "com.meditrekker");
-		//cap.setCapability("appActivity", "com.meditrekker.MainActivity");
+		//cap.setCapability("appPackage", "io.appium.android.apis");
+		//cap.setCapability("appActivity", "io.appium.android.apis.ApiDemos");
+		cap.setCapability("appPackage", "com.meditrekker");
+		cap.setCapability("appActivity", "com.meditrekker.MainActivity");
 		cap.setCapability("noReset", true);
 		cap.setCapability("build", "Jenkins Automation build #123");
 		
-	    // Add the following capabilities to measure your KPIs
+	    // Add the following capabilities to measure KPIs
 		cap.setCapability("newCommandTimeout", 300);
 		cap.setCapability("enablePerformanceLogging", true);
 		cap.setCapability("autoGrantPermissions", true);
@@ -102,10 +102,12 @@ public class TestBase {
 	    mobiledriver.executeScript("mobile: crash", Arrays.asList("io.appium.android.apis"));
 	}
 
-	public static void measureMemoryUsage() {
+
+	public static double measureMemoryUsage() {
 	    double memory = (double) (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / (1024 * 1024);
-	    System.out.println("Memory usage: " + memory + " MB");
+	    return memory;
 	}
+
 
 
 

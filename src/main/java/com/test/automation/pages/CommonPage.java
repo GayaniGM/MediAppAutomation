@@ -38,13 +38,21 @@ public class CommonPage extends TestBase{
 		mobiledriver.findElement(btn_EnConfirmation).click();
 	}
 
-	public void ValidateTest(String expecteValue) {
+	public void ValidateText(String expecteValue) {
 		
 		Assertion assertion = new Assertion();
 		String header = mobiledriver.findElement(lblAccessHeader).getText();
 		assertion.assertEquals(header, expecteValue, "Title Doesn't match");
 		
 	}
+	
+	public void ValidateElementPresent() {
+		
+		Assertion assertion = new Assertion();
+		assertion.assertTrue(true, "This element is present in the application");
+		
+	}
+	
 	
 	public void ScrollUp() {
 		

@@ -158,8 +158,8 @@ public class TC_003 {
         
         
         initialization.tearDown();
-        LOGGER.info("Test case tc004 execution completed successfully.");
-        Reporter.log("Test case tc004 execution completed successfully.");
+        LOGGER.info("Test case tc003 execution completed successfully.");
+        Reporter.log("Test case tc003 execution completed successfully.");
         
 	}
 	

@@ -43,7 +43,7 @@ public class MyAppointmentsPage extends TestBase{
 	By btn_RunningNUmber = By.xpath("//android.widget.TextView[@text='Update Running Number']");
 	By btn_AddAppointment = By.xpath("//android.widget.TextView[@text='Add Appointments']");
 	By lbl_AddAppointment = By.xpath("//android.widget.TextView[@text='Add Appointments']");
-	By btn_Add = By.xpath("//android.widget.TextView[@text='ADD']");
+	By btn_Add = By.xpath("//android.widget.TextView[@text='Add']");
 	By lbl_ErrorMessage = By.xpath("//android.widget.TextView[@text='This is required.']");
 	
 	

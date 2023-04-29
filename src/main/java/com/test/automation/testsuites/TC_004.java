@@ -90,11 +90,10 @@ private static final Logger LOGGER = LoggerFactory.getLogger(TC_004.class);
         WriteintoExcel.writeToExcel(memory);
         
         //Verify Add appointments detail page
-		/*
-		 * appointmentPage.VerifyAddAppointmentDetailsPage();
-		 * LOGGER.info("Verified Add Appointment details page successfully.");
-		 * Reporter.log("Verified Add Appointment details page successfully.");
-		 */
+		  appointmentPage.VerifyAddAppointmentDetailsPage();
+		  LOGGER.info("Verified Add Appointment details page successfully.");
+		  Reporter.log("Verified Add Appointment details page successfully.");
+		 
         
         initialization.tearDown();
         LOGGER.info("Test case tc004 execution completed successfully.");
